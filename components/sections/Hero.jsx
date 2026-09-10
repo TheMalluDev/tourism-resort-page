@@ -50,6 +50,7 @@ export default function Hero() {
           src={heroData.image}
           alt={heroData.imageAlt}
           fill
+          sizes="100vw"
           priority
           className="object-cover origin-center"
         />

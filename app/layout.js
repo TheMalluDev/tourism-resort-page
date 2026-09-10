@@ -3,6 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
+  metadataBase: new URL("http://localhost:3000"),
   title: "Elysium Mist Retreat | Luxury Eco-Resort in Munnar, Kerala",
   description:
     "Experience ultra-luxury in the misty tea plantations of Munnar. Private pool villas, Ayurveda, and curated plantation experiences at Elysium Mist Retreat.",

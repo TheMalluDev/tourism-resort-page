@@ -41,6 +41,7 @@ export default function Philosophy() {
             src={philosophy.image}
             alt={philosophy.imageAlt}
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
         </div>

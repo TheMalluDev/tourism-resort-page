@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --forest-deep:       #0F241D;
-  --cream-warm:        #F9F6EE;
-  --gold-bamboo:       #C5A880;
-  --mist-sage:         #5C7A6E;
-  --plantation-brown:  #3B2A1A;
+@theme {
+  --color-forest-deep: #0F241D;
+  --color-cream-warm: #F9F6EE;
+  --color-gold-bamboo: #C5A880;
+  --color-mist-sage: #5C7A6E;
+  --color-plantation-brown: #3B2A1A;
+  
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "DM Sans", sans-serif;
+  --font-accent: "Playfair Display", serif;
 }
 
 html {
@@ -17,8 +18,8 @@ html {
 }
 
 body {
-  background-color: var(--forest-deep);
-  color: var(--cream-warm);
-  font-family: 'DM Sans', sans-serif;
+  background-color: var(--color-forest-deep);
+  color: var(--color-cream-warm);
+  font-family: var(--font-sans);
   overflow-x: hidden;
 }
