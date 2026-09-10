@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 export default function VillaCard({
@@ -55,7 +57,10 @@ export default function VillaCard({
           </div>
         </div>
 
-        <button className="w-full mt-4 border border-cream-warm text-cream-warm py-3 uppercase tracking-widest text-sm hover:bg-cream-warm hover:text-forest-deep transition-colors duration-300">
+        <button 
+          onClick={() => window.dispatchEvent(new Event('openLeadCapture'))}
+          className="w-full mt-4 border border-cream-warm text-cream-warm py-3 uppercase tracking-widest text-sm hover:bg-cream-warm hover:text-forest-deep transition-colors duration-300"
+        >
           Enquire Now
         </button>
       </div>

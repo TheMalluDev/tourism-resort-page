@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { resort } from "@/lib/resortData";
 
@@ -10,8 +12,10 @@ export default function Navbar() {
           {resort.name}
         </Link>
 
-        {/* CTA */}
-        <button className="bg-gold-bamboo text-forest-deep px-5 py-2 md:px-6 md:py-2.5 rounded-sm font-medium tracking-widest text-xs md:text-sm uppercase hover:bg-cream-warm transition-colors duration-300">
+        <button 
+          onClick={() => window.dispatchEvent(new Event('openLeadCapture'))}
+          className="bg-gold-bamboo text-forest-deep px-5 py-2 md:px-6 md:py-2.5 rounded-sm font-medium tracking-widest text-xs md:text-sm uppercase hover:bg-cream-warm transition-colors duration-300"
+        >
           Reserve
         </button>
       </div>
