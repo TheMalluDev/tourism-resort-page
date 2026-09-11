@@ -60,13 +60,13 @@ export default function Hero() {
 
       {/* Content */}
       <div ref={headlineRef} className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
-        <h2 className="text-gold-bamboo font-serif italic text-xl md:text-2xl mb-4 tracking-wider">
+        <h2 className="text-cream-warm font-serif italic text-xl md:text-2xl mb-4 tracking-wider drop-shadow-lg">
           {heroData.subHeadline}
         </h2>
-        <h1 className="text-cream-warm font-serif text-5xl md:text-7xl lg:text-8xl leading-tight mb-6">
+        <h1 className="text-cream-warm font-serif text-5xl md:text-7xl lg:text-8xl leading-tight mb-6 drop-shadow-xl">
           {heroData.headline}
         </h1>
-        <p className="text-mist-sage text-sm md:text-base tracking-[0.2em] uppercase mb-10">
+        <p className="text-cream-warm/90 text-sm md:text-base tracking-[0.2em] uppercase mb-10 drop-shadow-md">
           {heroData.body}
         </p>
         <button className="border border-gold-bamboo text-gold-bamboo px-8 py-3 tracking-widest text-sm uppercase hover:bg-gold-bamboo hover:text-forest-deep transition-all duration-300">
